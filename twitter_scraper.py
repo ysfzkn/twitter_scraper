@@ -201,20 +201,26 @@ def edit_date(date):
 
     last_date = ""
 
+    for i in range(len(list_date)):
+        if i == 0:
+            date_dict["year"] = int(list_date[i])
+            
+        elif i == 1:
+            date_dict["month"] = int(list_date[i])
+        else:
+            date_dict["day"] = int(list_date[i])
+
     for i in range(len(list_hour)):
         if i == 0:
             hour_dict["hour"] = int(list_hour[i])+3
-            date_dict["year"] = int(list_date[i])
             if hour_dict["hour"] >= 24:  # zaman dilimi Türkiye'ye göre ayarlandı.
                 date_dict["day"] = date_dict["day"]+1
                 hour_dict["hour"] = (int(list_hour[i])+3) % 24
             
         elif i == 1:
             hour_dict["minute"] = int(list_hour[i])
-            date_dict["month"] = int(list_date[i])
         else:
             hour_dict["second"] = int(list_hour[i])
-            date_dict["day"] = int(list_date[i])
 
     for k in date_dict:
         
