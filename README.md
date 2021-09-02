@@ -1,2 +1,3 @@
 # twitter_scraper
-Scraping with tweepy and API
+
+* Scraping tweets with tweepy using Twitter API.
