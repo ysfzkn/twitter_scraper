@@ -4,22 +4,6 @@ Twitter Data Extraction Bot
 
 for user @ozkndev .
 
-Access Token:
-
-1390297114064916483-VJFnVXWrrbuwbfotMxDoUjcVEQWKTs
-
-Access Token Secret:
-
-qK6g1oeiz0yLybY0IV5MwVwgUsH0BHqkmlVHQn7dHkgX3
-
-API Key:
-
-LqYfTFQm4xNYdTapk8nbLU8S2
-
-API Secret Key:
-
-UstRhrp7wvnYATcXEEQODFV8g0rKvixCNZ4ifilnVNH5OOBhkR
-
 """
 
 import tweepy
@@ -45,10 +29,10 @@ for timeZone in pytz.all_timezones:
         break
 
 
-CONSUMER_KEY = "LqYfTFQm4xNYdTapk8nbLU8S2"
-CONSUMER_SECRET = "UstRhrp7wvnYATcXEEQODFV8g0rKvixCNZ4ifilnVNH5OOBhkR"
-ACCESS_TOKEN = "1390297114064916483-VJFnVXWrrbuwbfotMxDoUjcVEQWKTs"
-ACCESS_TOKEN_SECRET = "qK6g1oeiz0yLybY0IV5MwVwgUsH0BHqkmlVHQn7dHkgX3"
+CONSUMER_KEY = "YOUR CONSUMER KEY"
+CONSUMER_SECRET = "YOUR CONSUMER SECRET"
+ACCESS_TOKEN = "YOUR ACCESS TOKEN"
+ACCESS_TOKEN_SECRET = "YOUR ACCESS TOKEN SECRET"
 
 try:
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
